@@ -2,7 +2,7 @@
 This SQL project is based on an academic task focused on database design and manipulation. It involves creating and managing a database for a language training centre, including tables for Teachers, Staff Registrations, Courses, Students, and Student Enrolments.
 
 - Benefits: This database supports efficient management of teacher assignments, student enrolments, course offerings, and staff registrations. SQL manipulation ensures optimised queries, data integrity, and streamlined reporting.
-- The query to create the database can be viewed at [link].
+- The query to create the database can be viewed at [Create_database_and_tables](https://github.com/Yuxi-Cn/Language-Center-DB-SQL-Project/blob/main/Create_database_and_tables).
 - The GPT-generated (dummy) data and insert queries can be viewed at [link].
 
 ## Project Introduction
