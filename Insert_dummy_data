@@ -1,0 +1,78 @@
+-- Insert data into the Teacher table
+INSERT INTO Teacher (first_name, surname, job_title, department, teacher_rating, rate_date)
+VALUES 
+('John', 'Smith', 'Lecturer', 'Science', 4.5, '2023-04-10'),
+('Emma', 'Johnson', 'Professor', 'Math', 4.8, '2023-05-15'),
+('Michael', 'Williams', 'Assistant', 'Arts', 3.9, '2023-07-21'),
+('Olivia', 'Brown', 'Lecturer', 'Science', 4.2, '2022-09-05'),
+('Liam', 'Jones', 'Professor', 'Math', 4.7, '2022-11-30'),
+('Sophia', 'Garcia', 'Assistant', 'Science', 4.1, '2023-03-02'),
+('James', 'Miller', 'Lecturer', 'Arts', 4.0, '2023-01-14'),
+('Isabella', 'Davis', 'Professor', 'Science', 4.9, '2023-06-08'),
+('Benjamin', 'Martinez', 'Assistant', 'Math', 3.8, '2023-02-18'),
+('Mia', 'Hernandez', 'Lecturer', 'Arts', 4.3, '2023-08-19');
+
+-- Insert data into the Student table
+INSERT INTO Student (first_name, surname, department)
+VALUES 
+('Alice', 'Cooper', 'Science'),
+('Bob', 'Marley', 'Math'),
+('Charlie', 'Chaplin', 'Arts'),
+('David', 'Beckham', 'Science'),
+('Ella', 'Fitzgerald', 'Math'),
+('Frank', 'Sinatra', 'Arts'),
+('Grace', 'Kelly', 'Science'),
+('Hank', 'Williams', 'Math'),
+('Ivy', 'League', 'Arts'),
+('Jack', 'White', 'Science');
+
+-- Insert data into the Registration table
+INSERT INTO Registration (employee_id, job_title)
+VALUES 
+(1, 'Lecturer'),
+(2, 'Professor'),
+(3, 'Assistant'),
+(4, 'Lecturer'),
+(5, 'Professor'),
+(6, 'Assistant'),
+(7, 'Lecturer'),
+(8, 'Professor'),
+(9, 'Assistant'),
+(10, 'Lecturer');
+
+-- Insert data into the Course table
+INSERT INTO Course (course_name, module_leader, course_staff, course_score)
+VALUES 
+('Science 101', 1, 4, 88.5),
+('Math 201', 2, 5, 92.0),
+('Arts 301', 3, 7, 75.0),
+('Science 102', 4, 6, 89.0),
+('Math 202', 5, 9, 85.0),
+('Arts 302', 7, 10, 78.5),
+('Science 103', 6, 1, 91.5),
+('Math 203', 8, 2, 87.0),
+('Arts 303', 9, 3, 80.0),
+('Science 104', 10, 8, 93.5);
+
+-- Insert data into the Enrollment table
+INSERT INTO Enrollment (reference_number, student_id, enrollment_date, enrollment_deadline)
+VALUES 
+('ENR0001', 1, '2023-06-21', '2023-06-15'),
+('ENR0002', 2, '2023-07-15', '2023-07-10'),
+('ENR0003', 3, '2023-07-05', '2023-07-01'),
+('ENR0004', 4, '2023-06-25', '2023-06-20'),
+('ENR0005', 5, '2023-08-10', '2023-08-01'),
+('ENR0006', 6, '2023-09-01', '2023-08-20'),
+('ENR0007', 7, '2023-07-29', '2023-07-25'),
+('ENR0008', 8, '2023-08-05', '2023-08-02'),
+('ENR0009', 9, '2023-09-10', '2023-09-01'),
+('ENR0010', 10, '2023-06-30', '2023-06-20');
+
+-- Insert data into the StudentCourse table
+INSERT INTO StudentCourse (student_id, course_id)
+VALUES 
+(1, 1), (1, 2), (2, 2), (2, 3),
+(3, 4), (3, 5), (4, 1), (4, 3),
+(5, 2), (5, 4), (6, 3), (6, 5),
+(7, 1), (7, 5), (8, 2), (8, 4),
+(9, 3), (9, 1), (10, 4), (10, 5);
