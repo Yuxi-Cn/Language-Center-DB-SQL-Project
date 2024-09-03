@@ -9,7 +9,7 @@ This SQL project is based on an academic task focused on database design and man
 While the original project required only the database design, I was interested in exploring further manipulation possibilities within this database. This repository demonstrates some hypothesised scenarios with solutions using MySQL Workbench, aimed at simplifying reporting and enabling quick data retrieval.
 
 ### ER-Diagram
-The Entity Relationship Diagram is shown below. You can also find a detailed explanation of the relationships here: [link].
+The Entity Relationship Diagram is shown below. You can also find a detailed explanation of the relationships here: [Relationships_explanations](https://github.com/Yuxi-Cn/Language-Center-DB-SQL-Project/blob/main/Relationships_explanations).
 
 ![Language-Center_ER-Diagram](https://github.com/user-attachments/assets/6938d3f2-409f-4368-bc90-0516bf946139)
 
