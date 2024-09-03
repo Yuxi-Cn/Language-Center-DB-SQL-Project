@@ -1,0 +1,59 @@
+-- Create the database
+CREATE DATABASE IF NOT EXISTS new_training_center;
+USE new_training_center;
+
+-- Create the Teacher table
+CREATE TABLE Teacher (
+    employee_id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(50) NOT NULL,
+    surname VARCHAR(50) NOT NULL,
+    job_title VARCHAR(50),
+    department VARCHAR(50),
+    teacher_rating DECIMAL(3, 2),  -- Rating can be like 4.5, 3.8, etc.
+    rate_date DATE
+);
+
+-- Create the Student table
+CREATE TABLE Student (
+    student_id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(50) NOT NULL,
+    surname VARCHAR(50) NOT NULL,
+    department VARCHAR(50)
+);
+
+-- Create the Registration table
+CREATE TABLE Registration (
+    registration_id INT AUTO_INCREMENT PRIMARY KEY,
+    employee_id INT NOT NULL,
+    job_title VARCHAR(50),
+    FOREIGN KEY (employee_id) REFERENCES Teacher(employee_id)
+);
+
+-- Create the Course table
+CREATE TABLE Course (
+    course_id INT AUTO_INCREMENT PRIMARY KEY,
+    course_name VARCHAR(100) NOT NULL,
+    module_leader INT,
+    course_staff INT,
+    course_score DECIMAL(5, 2),  -- Score can be up to 100.00
+    FOREIGN KEY (module_leader) REFERENCES Teacher(employee_id),
+    FOREIGN KEY (course_staff) REFERENCES Teacher(employee_id)
+);
+
+-- Create the Enrollment table
+CREATE TABLE Enrollment (
+    reference_number VARCHAR(50) PRIMARY KEY,
+    student_id INT NOT NULL,
+    enrollment_date DATE,
+    enrollment_deadline DATE,
+    FOREIGN KEY (student_id) REFERENCES Student(student_id)
+);
+
+-- Create the StudentCourse table to represent the many-to-many relationship
+CREATE TABLE StudentCourse (
+    student_id INT,
+    course_id INT,
+    PRIMARY KEY (student_id, course_id),
+    FOREIGN KEY (student_id) REFERENCES Student(student_id),
+    FOREIGN KEY (course_id) REFERENCES Course(course_id)
+);
