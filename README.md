@@ -3,7 +3,7 @@ This SQL project is based on an academic task focused on database design and man
 
 - Benefits: This database supports efficient management of teacher assignments, student enrolments, course offerings, and staff registrations. SQL manipulation ensures optimised queries, data integrity, and streamlined reporting.
 - The query to create the database can be viewed at [Create_database_and_tables](https://github.com/Yuxi-Cn/Language-Center-DB-SQL-Project/blob/main/Create_database_and_tables).
-- The GPT-generated (dummy) data and insert queries can be viewed at [link].
+- The GPT-generated (dummy) data and insert queries can be viewed at [Insert_dummy_data](https://github.com/Yuxi-Cn/Language-Center-DB-SQL-Project/blob/main/Insert_dummy_data).
 
 ## Project Introduction
 While the original project required only the database design, I was interested in exploring further manipulation possibilities within this database. This repository demonstrates some hypothesised scenarios with solutions using MySQL Workbench, aimed at simplifying reporting and enabling quick data retrieval.
