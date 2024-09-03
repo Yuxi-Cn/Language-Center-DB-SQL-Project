@@ -1,0 +1,16 @@
+-- Table relationships
+
+- Teacher to Registration: One-to-One  
+  A teacher (`employee_id`) can have only one registration (`registration_id`). 
+
+- Teacher to Course: One-to-Many  
+  A teacher (`employee_id`) can be the module leader or course staff for multiple courses. Each course (`course_id`) has a single module leader and course staff (`employee_id`).
+
+- Course to Studentcourse: One-to-Many  
+  A course (`course_id`) can have multiple students (`student_id`), but each student (`student_id`) is associated with only one course.
+
+- Studentcourse to Student: Many-to-One  
+  A course (`course_id`) can have multiple students (`student_id`), but each student (`student_id`) is associated with only one course.
+
+- Student to Enrollment: One-to-One  
+  A student (`student_id`) can have only one enrollment (`reference_number`).
